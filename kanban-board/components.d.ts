@@ -7,9 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Dragger: typeof import('./src/components/Dragger.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Item: typeof import('./src/components/Item.vue')['default']
     KanbanBoard: typeof import('./src/components/KanbanBoard.vue')['default']
+    VanilleDrag: typeof import('./src/components/VanilleDrag.vue')['default']
   }
 }

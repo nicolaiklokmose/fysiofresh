@@ -1,15 +1,22 @@
 <template>
-  <v-app style="background-color: white;">
+  <v-app class="app">
+    <Header />
     <v-main>
-      <v-container style="color: black">
-        <Header />
+      <v-container fluid>
         <KanbanBoard />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
-<script setup lang="ts">
+<script>
+import Header from './components/Header.vue';
+import KanbanBoard from './components/KanbanBoard.vue';
 
+export default {
+  components: {
+    Header,
+    KanbanBoard
+  }
+}
 </script>
-
