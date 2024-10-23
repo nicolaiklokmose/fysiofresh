@@ -28,3 +28,14 @@ export default {
   font-family: 'Arial', sans-serif;
 }
 </style>
+
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    
+  },
+})
+</script>
