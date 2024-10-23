@@ -20,6 +20,7 @@ export default {
   }
 }
 </script>
+<<<<<<< HEAD
 
 <style>
 .app {
@@ -198,3 +199,5 @@ export default defineComponent({
 })
 </script>
 dasdasdasdasdasdasdasdsd
+=======
+>>>>>>> 2-create-mainframe-component

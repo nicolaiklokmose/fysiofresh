@@ -1,7 +1,12 @@
 <template>
     <v-card class="my-3" :style="{ backgroundColor: task.color }" draggable="true" @dragstart="startDrag">
+<<<<<<< HEAD
+      <v-card-title class="headline text-uppercase" style="color: black">{{ task.title }}</v-card-title>
+      <v-card-text style="color: black">{{ task.description }}</v-card-text>
+=======
       <v-card-title class="headline text-uppercase" style="color: #00796b">{{ task.title }}</v-card-title>
       <v-card-text style="color: #004d40">{{ task.description }}</v-card-text>
+>>>>>>> test-nbk
     </v-card>
   </template>
   
@@ -16,6 +21,8 @@
     event.dataTransfer.setData('taskId', props.task.id.toString());
   };
   </script>
+<<<<<<< HEAD
+=======
   
   <style>
   .v-card {
@@ -28,4 +35,5 @@
     transform: scale(1.05);
   }
   </style>
+>>>>>>> test-nbk
   
