@@ -39,3 +39,12 @@ export default defineComponent({
   },
 })
 </script>
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    
+  },
+})
+</script>
