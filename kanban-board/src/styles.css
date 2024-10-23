@@ -1,7 +1,14 @@
 .drop-zone {
+<<<<<<< HEAD
   background-color: transparent;
   padding: 20px;
   min-height: 200px;
+=======
+  background-color: #f1f1f1;
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 8px;
+>>>>>>> test-nbk
 }
 
 .item {
@@ -15,6 +22,25 @@
 }
 
 .app {
+<<<<<<< HEAD
   background-color: white;
   color: black;
 }
+=======
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo {
+  padding-left: 25px;
+  height: 50px;
+  width: auto; 
+}
+
+.v-card {
+  border-radius: 25px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+>>>>>>> test-nbk

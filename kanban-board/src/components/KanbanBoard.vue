@@ -46,6 +46,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+<<<<<<< HEAD
 // Data for dummy tasks that should be made draggable. Maybe move to seperate data.js and inject
 
 const todoTasks = ref([
@@ -63,6 +64,23 @@ const doneTasks = ref([
   { id: 6, title: 'Task 6', description: 'Description for Task 6', color: '#fbebbb' },
   { id: 7, title: 'Task 7', description: 'Description for Task 7', color: '#fbebbb' },
   { id: 8, title: 'Task 8', description: 'Description for Task 8', color: '#fbebbb' },
+=======
+const todoTasks = ref([
+  { id: 1, title: 'Task 1', description: 'Description for Task 1', color: '#e0f7fa' },
+  { id: 2, title: 'Task 2', description: 'Description for Task 2', color: '#e0f7fa' },
+  { id: 3, title: 'Task 3', description: 'Description for Task 3', color: '#e0f7fa' },
+]);
+
+const inProgressTasks = ref([
+  { id: 4, title: 'Task 4', description: 'Description for Task 4', color: '#b2ebf2' },
+  { id: 5, title: 'Task 5', description: 'Description for Task 5', color: '#b2ebf2' },
+]);
+
+const doneTasks = ref([
+  { id: 6, title: 'Task 6', description: 'Description for Task 6', color: '#80deea' },
+  { id: 7, title: 'Task 7', description: 'Description for Task 7', color: '#80deea' },
+  { id: 8, title: 'Task 8', description: 'Description for Task 8', color: '#80deea' },
+>>>>>>> test-nbk
 ]);
 
 const onDrop = (event, list) => {
@@ -72,12 +90,16 @@ const onDrop = (event, list) => {
             || doneTasks.value.find(task => task.id.toString() === taskId);
 
   if (task) {
+<<<<<<< HEAD
     // Remove the task from its original list
+=======
+>>>>>>> test-nbk
     const originalList = getListByTaskId(taskId);
     if (originalList) {
       originalList.splice(originalList.indexOf(task), 1);
     }
 
+<<<<<<< HEAD
     // Determine the color based on the column
     let color = '';
     switch (list) {
@@ -89,15 +111,32 @@ const onDrop = (event, list) => {
         break;
       case 'done':
         color = '#fbebbb';
+=======
+    let color = '';
+    switch (list) {
+      case 'todo':
+        color = '#e0f7fa';
+        break;
+      case 'inProgress':
+        color = '#b2ebf2';
+        break;
+      case 'done':
+        color = '#80deea';
+>>>>>>> test-nbk
         break;
       default:
         break;
     }
 
+<<<<<<< HEAD
     // Update the color
     task.color = color;
 
     // Add the task to other list
+=======
+    task.color = color;
+
+>>>>>>> test-nbk
     switch (list) {
       case 'todo':
         todoTasks.value.push(task);
@@ -114,7 +153,10 @@ const onDrop = (event, list) => {
   }
 };
 
+<<<<<<< HEAD
 // Helper function to find task.id of drag object
+=======
+>>>>>>> test-nbk
 const getListByTaskId = (taskId) => {
   if (todoTasks.value.some(task => task.id.toString() === taskId)) {
     return todoTasks.value;
@@ -127,3 +169,15 @@ const getListByTaskId = (taskId) => {
   }
 };
 </script>
+<<<<<<< HEAD
+=======
+
+<style>
+.drop-zone {
+  background-color: #f1f1f1;
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 8px;
+}
+</style>
+>>>>>>> test-nbk
